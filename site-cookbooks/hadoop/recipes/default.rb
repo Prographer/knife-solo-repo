@@ -6,3 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+%w{openssh-server openssh-clients}.each do |pkg|
+    package pkg do
+        action :upgrade
+    end
+end

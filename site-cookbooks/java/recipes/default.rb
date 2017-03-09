@@ -7,7 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-%w{openssh-server openssh-clients curl}
+package "curl" do
+    action :upgrade
+end
 
 bash "java_install" do
     user 'root'
